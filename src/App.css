@@ -1,0 +1,16 @@
+/* App-specific spatial layout definitions */
+.app-viewport {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg);
+}
+
+.liquid-glass-wrapper {
+  position: relative;
+}
+
+.magnetic-btn {
+  user-select: none;
+}

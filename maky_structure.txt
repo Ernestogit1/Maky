@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mcximoz T. Torres | Marketing &amp; Operations</title>
+<meta name="description" content="Portfolio of Mcximoz Torres, a Marketing Management graduate from the University of Makati with real estate marketing, client sales and public-sector admin experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0B0B0C;--surface:#151416;--ink:#F3EBDD;--mute:#B0A692;--line:#2E2A1F;--accent:#D4AF37;--on-accent:#0B0B0C;--brass:#8C6D1F;
+--display:"Playfair Display",Georgia,"Times New Roman",serif;--body:"Instrument Sans","Segoe UI",Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px;flex-wrap:wrap}
+nav b{font:600 19px var(--display)}
+nav ul{display:flex;flex-wrap:wrap;gap:8px 20px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--ink)}
+/* hero: a yard sign */
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center;padding:56px 0 80px}
+.hero h1{font:600 clamp(40px,6.4vw,76px)/1.05 var(--display);letter-spacing:-.01em;margin:0 0 22px}
+.hero p{max-width:34em;color:var(--mute);font-size:19px;margin:0 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:2px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--on-accent)}
+.btn.s{color:var(--ink);border-color:var(--line)}
+.btn:hover{transform:translateY(-2px)}
+.sign{justify-self:center;width:100%;max-width:340px;position:relative;padding-bottom:70px}
+.sign:after{content:"";position:absolute;left:50%;bottom:0;width:10px;height:78px;background:var(--brass);transform:translateX(-50%);border-radius:0 0 4px 4px}
+.board{background:linear-gradient(135deg,#E6C766,#D4AF37 55%,#B8932A);color:var(--on-accent);border-radius:6px;padding:30px 28px;transform:rotate(-2.5deg);box-shadow:0 14px 0 -6px var(--brass);animation:drop .7s cubic-bezier(.2,1.2,.4,1) both}
+@keyframes drop{from{transform:translateY(-40px) rotate(-8deg);opacity:0}}
+.board small{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.board strong{display:block;font:700 40px/1.05 var(--display);margin-bottom:14px}
+.board ul{margin:0;padding:14px 0 0;border-top:2px solid currentColor;list-style:none;font-size:15px;font-weight:500}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font:600 clamp(28px,4vw,40px)/1.15 var(--display);letter-spacing:0;margin:0 0 32px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin:0 0 16px;max-width:36em}
+.stats{display:grid;gap:16px;align-content:start}
+.stat{background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:4px;padding:22px 24px;display:flex;gap:20px;align-items:center}
+.stat b{font:600 44px/1 var(--display);color:var(--accent);min-width:98px}
+.stat span{color:var(--mute);font-size:15px}
+.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:3px solid var(--line)}
+.tl>li{position:relative;padding:0 0 34px 8px}
+.tl>li:before{content:"";position:absolute;left:-36px;top:7px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:4px solid var(--accent)}
+.tl h3{font:600 20px/1.3 var(--display);margin:0}
+.tl .meta{color:var(--mute);font-size:15px;margin:2px 0 8px}
+.tl p{margin:0;max-width:40em}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.skills div{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:24px}
+.skills h3{font:600 19px var(--display);margin:0 0 10px}
+
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tile{aspect-ratio:4/5;border:1px dashed var(--brass);border-radius:4px;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;color:var(--mute);font-size:15px}
+.tile b{color:var(--ink);font:700 18px var(--display);display:block;margin-bottom:4px}
+.note{color:var(--mute);margin-top:18px;font-size:15px}
+.contact{text-align:left}
+.contact p{max-width:30em;color:var(--mute);margin:0 0 24px}
+.award{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:start}
+.award video,.award img{width:100%;display:block;border-radius:4px;border:1px solid var(--line);background:#000}
+.award figure{margin:0}.award figcaption{color:var(--mute);font-size:15px;margin-top:10px}
+.lead{max-width:38em;color:var(--mute);margin:-12px 0 28px}
+.reel{margin-top:16px;border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:4px;background:var(--surface);padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.reel h3{font:600 20px var(--display);margin:0 0 4px}.reel p{margin:0;color:var(--mute);font-size:15px}
+.details{list-style:none;margin:0 0 24px;padding:0;color:var(--mute)}.details a{color:var(--ink)}
+@media (max-width:820px){.award{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){}
+.posts{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.post{background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.post img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;background:#000}
+.post div{padding:20px 22px 24px}.post p{margin:0 0 12px;font-size:16px}
+.post .tags{color:var(--accent);font-weight:500;font-size:15px;margin:0}
+@media (max-width:820px){.posts{grid-template-columns:1fr}}
+.hero .eyebrow{font:600 13px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:4px;background:var(--surface);margin:0 0 56px}
+.strip div{padding:22px 24px;border-left:1px solid var(--line)}.strip div:first-child{border-left:0}
+.strip b{display:block;font:600 40px/1 var(--display);color:var(--accent);margin-bottom:8px}.strip span{display:block;color:var(--mute);font-size:14px;line-height:1.4}
+.mono{width:84px;height:84px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;font:600 30px var(--display);color:var(--accent);margin-bottom:22px}
+.cards{display:grid;gap:16px}.cards2{grid-template-columns:1fr 1fr;gap:20px}.cards2.three>:last-child{grid-column:1/-1}
+.card{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:4px;padding:22px 24px}
+.card h3{font:600 20px var(--display);margin:0 0 8px}.card p{margin:0 0 12px;color:var(--mute);font-size:16px}.card p:last-child{margin:0}
+.tags span{display:inline-block;border:1px solid var(--brass);color:var(--accent);border-radius:20px;padding:2px 12px;font-size:13px;margin:0 6px 6px 0}
+.tl ul{margin:0;padding-left:18px;max-width:46em}.tl ul li{padding:0 0 4px}
+.skills ul{list-style:none;margin:0;padding:0}.skills li{position:relative;padding:4px 0 4px 26px;color:var(--mute);font-size:16px}
+.skills li:before{content:"";position:absolute;left:6px;top:9px;width:6px;height:11px;border:solid var(--accent);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.banner{background:linear-gradient(135deg,#E6C766,#D4AF37 55%,#B8932A);color:#0B0B0C;border-radius:4px;padding:24px 28px;margin:0 0 24px}
+.banner small{display:block;font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}.banner b{display:block;font:700 clamp(20px,3vw,28px)/1.2 var(--display)}.banner span{font-size:15px}
+h3.sub{font:600 24px var(--display);margin:48px 0 18px}.certs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}
+@media (max-width:820px){.strip{grid-template-columns:1fr 1fr}.strip div:nth-child(3){border-left:0}.strip div:nth-child(n+3){border-top:1px solid var(--line)}.cards2,.certs{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+.cert-img{margin:24px 0 0}.cert-img img{width:100%;max-width:640px;display:block;border-radius:4px;border:1px solid var(--line)}.cert-img figcaption{color:var(--mute);font-size:15px;margin-top:10px}
+.chap{display:grid;grid-template-columns:160px 1fr;gap:8px 32px;padding:28px 0;border-top:1px solid var(--line)}
+.chap .yr{font:600 13px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);padding-top:8px}
+.chap h3{font:600 24px/1.2 var(--display);margin:0 0 10px}.chap p{margin:0 0 12px;max-width:42em}.chap .tk{color:var(--accent);font-weight:500}
+.chap ul{margin:0 0 12px;padding-left:18px;max-width:46em;color:var(--mute)}.chap li{padding-bottom:8px}.chap li b{color:var(--ink);font-weight:600}
+.quote{border-left:3px solid var(--accent);padding:4px 0 4px 22px;margin:0 0 32px;font:italic 500 clamp(20px,3vw,26px)/1.35 var(--display);max-width:30em}.quote small{display:block;font:500 14px var(--body);font-style:normal;color:var(--mute);margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 32px}.chips span{border:1px solid var(--brass);border-radius:20px;padding:6px 16px;font-size:14px;color:var(--accent)}
+.next{background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--accent);border-radius:4px;padding:28px}.next h3{font:600 26px var(--display);margin:0 0 10px}.next p{margin:0 0 16px;color:var(--mute);max-width:40em}
+@media (max-width:820px){.chap{grid-template-columns:1fr}}
+footer{padding:28px 0 40px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:820px){.hero,.about{grid-template-columns:1fr;gap:36px}.skills,.work{grid-template-columns:1fr}.tile{aspect-ratio:auto;min-height:150px}.hero{padding-top:24px}}
+@media (prefers-reduced-motion:reduce){.board{animation:none}html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Mcximoz Torres</b>
+<ul><li><a href="#about">About</a></li><li><a href="#journey">Story</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#strategy">Work</a></li><li><a href="#award">Recognition</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+
+<header class="hero">
+<div>
+<p class="eyebrow">Marketing Management Specialist &amp; Operations Strategist</p>
+<h1>I market properties and keep operations moving.</h1>
+<p>I graduated from the University of Makati in 2026 with a BSBA in Marketing Management. I have worked on real estate listings and client deals, and in city government offices on budgets and admin. I'm open to entry-level and strategic roles.</p>
+<div class="btns"><a class="btn p" href="#contact">Get in touch</a><a class="btn s" href="#experience">See my experience</a></div>
+</div>
+<div class="sign" aria-label="Availability sign">
+<div class="board"><small>Open for roles</small><strong>Mcximoz T. Torres</strong>
+<ul><li>BSBA Marketing Management</li><li>University of Makati, Class of 2026</li></ul></div>
+</div>
+</header>
+<div class="strip"><div><b>30%</b><span>Brand visibility and audience reach, Alpha Premier Realty internship</span></div><div><b>25%</b><span>Online engagement across platforms</span></div><div><b>20%</b><span>Increase in lead generation from targeted campaigns</span></div><div><b>60+</b><span>Prospective clients engaged, about 20% closed as deals</span></div></div>
+
+<section id="about">
+<h2>About</h2>
+<div class="about">
+<div><div class="mono" aria-hidden="true">MT</div>
+<p>Call me Max. I studied Business Administration with a major in Marketing Management at the University of Makati and graduated in August 2026.</p>
+<p>Most of my work so far has been in real estate, where a post only counts if someone messages about a viewing. I also spent time in city government and university offices, so budgets and deadlines are familiar ground.</p></div>
+<div class="cards">
+<div class="card"><h3>Marketing</h3><p>I plan and run digital campaigns, write the content and track the leads that come in.</p></div>
+<div class="card"><h3>Operations</h3><p>I have handled budgets, project records and office paperwork in real estate, city government and a university office.</p></div>
+<div class="card"><h3>Clients and teams</h3><p>I answer client inquiries, work out deals between owners and buyers or tenants, and keep everyone updated.</p></div>
+</div></div>
+</section>
+
+<section id="journey">
+<h2>From a 1:00 AM group project to closed deals</h2>
+<p class="lead">I started this degree thinking marketing meant big ideas and good-looking decks. The polished result turned out to be about ten percent of the job. The other ninety happens where nobody is watching.</p>
+<blockquote class="quote">Learn from the past. Focus on the present. Plan for the future.<small>My guiding rule</small></blockquote>
+<div class="chap"><div class="yr">First year<br>2022 to 2023</div><div><h3>The 1:00 AM rewrite</h3><p>My first semester opened with a group project on the daily operations of a local retail business, with teammates I had known for two weeks. By week three we had a deadline, no shared plan, and a business that changed its product line halfway through our data collection. Past 1:00 AM, I could have handed in something half done. I fell back on my rule instead. I split the work into small tasks, took the workflow analysis and the financial appendix, and called a morning sync. Our professor named it one of the most structurally sound projects in the class.</p><p class="tk">What it taught me: good work comes from handling the small details when things get hard.</p></div></div>
+<div class="chap"><div class="yr">Second year<br>2023 to 2024</div><div><h3>My first office role</h3><p>From April to July 2024 I worked as an Administrative Assistant with the Makati Internship Program at the College of Continuing, Advanced, and Professional Studies (CCAPS) at UMak. I kept up with classes while handling student portfolios and admin work for the Dean and Directors. I sorted hundreds of portfolios, drafted memos, and kept the details exact.</p><p class="tk">What it taught me: good admin work keeps an organization running, even when nobody notices it.</p></div></div>
+<div class="chap"><div class="yr">Third year<br>2024 to 2025</div><div><h3>Thesis year</h3><p>Thesis took over the year. I did the research and data gathering, defended our methods, and worked with my team to pull the capstone together, all alongside heavier marketing coursework. There were many late nights reviewing literature and refining frameworks. When I got tired, I reminded myself that a big thesis gets built one paragraph and one data point at a time.</p><p class="tk">What it taught me: how to stay focused on analysis for a whole year.</p></div></div>
+<div class="chap"><div class="yr">Fourth year<br>2025 to 2026</div><div><h3>Real estate, real numbers</h3><p>In my last year I moved from the classroom into live work.</p><ul><li><b>Marketing and Social Media Intern Leader, Alpha Premier Realty (Aug to Dec 2025).</b> I ran content and lead generation for real estate listings. We audited our content and reworked the posting schedule and ad copy, and the team lifted brand visibility by 30% and lead generation by 20%.</li><li><b>Marketing Associate, part-time, Alpha Premier Realty (Jan to Feb 2026).</b> I engaged 60+ prospective clients, worked through tricky negotiations, and closed about 20% as deals across sales and leasing.</li><li><b>Administrative Assistant, DEPW Budget and Planning Division (Apr to Jul 2026).</b> I tracked the status of the 2026 Annual Investment Program (AIP) and handled municipal budgets line by line, where accuracy was required.</li></ul></div></div>
+<div class="chips"><span>Graduated August 6, 2026, BSBA Marketing Management</span><span>Best Environmental Marketing Advertisement, University of Makati</span><span>HP LIFE: Strategic Planning in the AI Age</span><span>Alison courses in social media marketing and AI marketing</span></div>
+<div class="next"><h3>What comes next</h3><p>The syllabus is finished. I got here through hundreds of small choices to do the work right, from organizing student files to closing deals and tracking municipal budgets. Now I want a role where I can keep doing that and grow into marketing leadership, one campaign at a time.</p><a class="btn p" href="#contact">Talk to me about a role</a></div>
+</section>
+
+<section id="highlights">
+<h2>Strengths</h2>
+<div class="cards cards2">
+<div class="card"><h3>Marketing and digital strategy</h3><p>Social media campaigns and structured listings that grew brand visibility and brought in leads.</p><div class="tags"><span>Social media</span><span>Content planning</span><span>Leads</span></div></div>
+<div class="card"><h3>Sales and leasing</h3><p>Structured follow-ups and owner-buyer negotiations that turned prospective clients into closed deals.</p><div class="tags"><span>Client inquiries</span><span>Closing</span><span>Contracts</span></div></div>
+<div class="card"><h3>Budget and admin tracking</h3><p>Monitored the Annual Investment Program (AIP), tracked equipment budgets and organized communications for executives.</p><div class="tags"><span>Budget monitoring</span><span>AIP</span><span>Executive support</span></div></div>
+<div class="card"><h3>AI and tech</h3><p>HP LIFE certificate in strategic planning with AI, plus completed courses in AI marketing. I use automation tools in everyday marketing work.</p><div class="tags"><span>AI marketing</span><span>Automation</span></div></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<ol class="tl"><li><h3>Administrative Assistant (Makati Internship Program)</h3><div class="meta">DEPW Budget and Planning Division, City Engineer's Office, Makati City &middot; Apr to Jul 2026</div><ul><li>Monitored the status of the 2026 Annual Investment Program (AIP) so reports stayed accurate.</li><li>Reviewed and tracked budget updates for equipment and project requirements.</li><li>Joined site inspections and meetings, and kept stakeholders informed.</li><li>Organized official documents and correspondence for the division.</li></ul></li><li><h3>Marketing Associate (part-time)</h3><div class="meta">Alpha Premier Realty, Pasig, Ortigas &middot; Jan to Feb 2026</div><ul><li>Handled leasing and sales activity, including a high volume of client inquiries and property transactions.</li><li>Engaged 60+ prospective clients through viewings and converted about 20% into deals.</li><li>Coordinated negotiations between property owners and their tenants or buyers so closings stayed on schedule.</li><li>Processed documents and ran marketing initiatives to improve listing visibility.</li></ul></li><li><h3>On-call HR (part-time)</h3><div class="meta">Alpha Premier Realty &middot; 2026, 2 months</div><ul><li>Supported the team with HR tasks as needed.</li></ul></li><li><h3>Marketing and Social Media Intern Leader</h3><div class="meta">Alpha Premier Realty, Pasig, Ortigas &middot; Aug to Dec 2025</div><ul><li>Led marketing work that raised brand visibility and audience reach by 30%.</li><li>Planned and managed content across platforms and lifted online engagement by 25%.</li><li>Ran targeted campaigns that added 20% to lead generation.</li><li>Adjusted marketing strategy for property listings and coordinated with property owners.</li></ul></li><li><h3>Administrative Assistant (Makati Internship Program)</h3><div class="meta">CCAPS, University of Makati &middot; Apr to Jul 2024</div><ul><li>Coordinated office operations for the Dean and Directors.</li><li>Managed portfolios for incoming and graduating students and made sure requirements were completed on time.</li><li>Kept student and alumni records accurate and easy to access.</li><li>Relayed daily priorities from leadership and faculty to students.</li></ul></li></ol>
+</section>
+
+<section id="skills">
+<h2>Skills and tools</h2>
+<div class="skills"><div><h3>Digital marketing</h3><ul><li>Content creation</li><li>Social media management</li><li>Digital advertising</li><li>Campaign analytics</li></ul></div><div><h3>AI and tech</h3><ul><li>AI marketing workflows</li><li>Strategic AI prompting</li><li>Content automation tools</li><li>Data and trend analysis</li></ul></div><div><h3>Operations and sales</h3><ul><li>Property coordination</li><li>Client relations</li><li>Budget management</li><li>Administrative support</li></ul></div></div>
+<p class="note">Design and editing tools: Canva, Adobe Photoshop and Claude.</p>
+</section>
+
+<section id="strategy">
+<h2>Projects and content strategy</h2>
+<div class="cards cards2 three">
+<div class="card"><h3>Short-form video and reels</h3><p>Property walkthroughs and short clips built for TikTok, Instagram Reels and Facebook Watch.</p></div>
+<div class="card"><h3>Lead generation funnels</h3><p>Social copy with clear calls to action that send prospective buyers straight to messaging and viewings.</p></div>
+<div class="card"><h3>Content calendar</h3><p>Scheduled posting, a consistent grid and regular engagement checks across platforms.</p></div>
+</div>
+</section>
+
+<section id="work">
+<h2>Videos and reels</h2>
+<p class="lead">More of my video content is on Facebook.</p>
+<div class="reel"><div><h3>Video brochure</h3><p>Hosted on Facebook.</p></div><a class="btn p" href="https://www.facebook.com/share/v/1HE8AF7umB/?mibextid=wwXIfr" target="_blank" rel="noopener">Watch on Facebook</a></div>
+<div class="reel"><div><h3>Reel 1</h3><p>Hosted on Facebook.</p></div><a class="btn p" href="https://www.facebook.com/share/r/19bRUqvcXv/?mibextid=wwXIfr" target="_blank" rel="noopener">Watch on Facebook</a></div>
+<div class="reel"><div><h3>Reel 2</h3><p>Hosted on Facebook.</p></div><a class="btn p" href="https://www.facebook.com/share/v/1DtFsHZaHG/?mibextid=wwXIfr" target="_blank" rel="noopener">Watch on Facebook</a></div>
+<div class="reel"><div><h3>Reel 3</h3><p>Hosted on Facebook.</p></div><a class="btn p" href="https://www.facebook.com/share/v/1EuZn8dzPi/?mibextid=wwXIfr" target="_blank" rel="noopener">Watch on Facebook</a></div>
+<div class="reel"><div><h3>Reel 4</h3><p>Hosted on Facebook.</p></div><a class="btn p" href="https://www.facebook.com/share/r/1Cr8QL9XJw/?mibextid=wwXIfr" target="_blank" rel="noopener">Watch on Facebook</a></div>
+<div class="reel"><div><h3>Reel 5</h3><p>Hosted on Facebook.</p></div><a class="btn p" href="https://www.facebook.com/share/v/1KfATvW9bi/?mibextid=wwXIfr" target="_blank" rel="noopener">Watch on Facebook</a></div>
+</section>
+
+<section id="award">
+<h2>Recognition</h2>
+<div class="banner"><div><small>University award</small><b>Best Environmental Marketing Advertisement</b><span>University of Makati, June 2026</span></div></div>
+<p class="lead">Our team won this award at the university's marketing awards. The video below is the advertisement that earned it.</p>
+<div class="award">
+<figure><video controls preload="metadata" playsinline aria-label="Winning environmental marketing advertisement"><source src="DATA_VIDEO" type="video/mp4"></video><figcaption>The winning advertisement.</figcaption></figure>
+<figure><img alt="Winners holding their certificates on stage at the Best Environmental Marketing awarding" src="DATA_IMG"><figcaption>On stage at the awarding, holding our certificates.</figcaption></figure>
+</div>
+<h3 class="sub">Certifications and courses</h3>
+<div class="certs"><div class="card"><h3>Advanced Social Media Marketing Management</h3><p>Alison, course completed October 23, 2026</p></div><div class="card"><h3>AI Marketing</h3><p>Alison, course completed October 23, 2026</p></div><div class="card"><h3>Strategic Planning in the AI Age</h3><p>HP LIFE, certificate presented September 15, 2026</p></div><div class="card"><h3>Digital Advertising and Marketing 201</h3><p>Alison, course completed September 15, 2026</p></div></div>
+<figure class="cert-img"><img alt="HP LIFE certificate of completion for Strategic Planning in the AI Age" src="DATA_IMG"><figcaption>HP LIFE certificate of completion, presented September 15, 2026.</figcaption></figure>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let's talk</h2>
+<p>I'm open to real estate, corporate operations, and marketing roles. Send a message and I'll reply promptly.</p>
+<ul class="details"><li>Email: <a href="mailto:torresmcximoz@gmail.com">torresmcximoz@gmail.com</a></li><li>Address: Guadalupe Nuevo, Makati City</li><li>Phone: <a href="tel:+639691300158">0969 130 0158</a></li></ul>
+<div class="btns"><a class="btn p" href="mailto:torresmcximoz@gmail.com">Send an email</a><a class="btn s" href="tel:+639691300158">Call me</a></div>
+</section>
+<footer>© 2026 Mcximoz T. Torres. Guadalupe Nuevo, Makati City. Available for entry-level and strategic roles.</footer>
+</div>
+<script>(function(){if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion:reduce)').matches)return;var s=document.querySelectorAll('section');s.forEach(function(e){e.classList.add('rv')});var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{threshold:.05});s.forEach(function(e){o.observe(e)})})()</script>
+</body>
+</html>
